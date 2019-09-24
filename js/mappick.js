@@ -29,8 +29,8 @@ function randomMap(){
   maps = values.join(', ')
   shuffle(values);
 //  alert('You selected: ' + shuffle(maps3));
-  var n = document.getElementById('numpick');
-  alert(n.value)
+//  var n = document.getElementById('numpick');
+//  alert(n.value)
   document.getElementById('result').innerHTML = 23 //values//.slice(0,n).toString();
 };
 
