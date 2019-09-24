@@ -29,9 +29,9 @@ function randomMap(){
   maps = values.join(', ')
   shuffle(values);
 //  alert('You selected: ' + shuffle(maps3));
-//  var n = document.getElementById('numpick');
+  var n = document.getElementById('numpick').value;
 //  alert(n.value)
-  document.getElementById('result').innerHTML = 23 //values//.slice(0,n).toString();
+  document.getElementById('result').innerHTML = values.slice(0,n).toString();
 };
 
 /* document.getElementById('cmb1').onclick = function() {
