@@ -1,4 +1,4 @@
-<p id="maps">Core maps:</p>
+<p>Core maps:</p>
 <form name="coremaps">
 <p><input id="cmb1" checked="checked" name="maps" type="checkbox" value="Dust2" /> <label for="cmb1">Dust2</label></p>
 <p><input id="cmb2" checked="checked" name="maps" type="checkbox" value="Mirage" /> <label for="cmb2">Mirage</label></p>
@@ -6,18 +6,21 @@
 <p><input id="cmb4" checked="checked" name="maps" type="checkbox" value="Inferno" /> <label for="cmb4">Inferno</label></p>
 </form>
 
-<p id="maps">Other pool maps:</p>
-<p><input id="opm1" checked="checked" name="Cache" type="checkbox" value="ON" /> <label for="opm1">Cache</label></p>
-<p><input id="opm2" checked="checked" name="Overpass" type="checkbox" value="ON" /> <label for="opm2">Overpass</label></p>
-<p><input id="opm3" checked="checked" name="Vertigo" type="checkbox" value="ON" /> <label for="opm3">Vertigo</label></p>
-<p><input id="opm4" checked="checked" name="Train" type="checkbox" value="ON" /> <label for="opm4">Train</label></p>
+<p>Other pool maps:</p>
+<form name="othermaps">
+<p><input id="opm1" checked="checked" name="others" type="checkbox" value="Cache" /> <label for="opm1">Cache</label></p>
+<p><input id="opm2" checked="checked" name="others" type="checkbox" value="Overpass" /> <label for="opm2">Overpass</label></p>
+<p><input id="opm3" checked="checked" name="others" type="checkbox" value="Vertigo" /> <label for="opm3">Vertigo</label></p>
+<p><input id="opm4" checked="checked" name="others" type="checkbox" value="Train" /> <label for="opm4">Train</label></p>
+</form>
 
 <form>
-<p>Number of core maps: <input max="4" min="0" name="numpick" type="number" value=2 /></p>
+<p>Number of core maps: <input max="4" min="0" id="numpick" name="numpick" type="number" value=2 /></p>
 </form>
 
 <input type="button" value="Click for a random map" onClick="randomMap()">
 <p id="result"></p>
 <p id="result2"></p>
+<p id="result3"></p>
 
  <script src="js/mappick.js">
