@@ -36,6 +36,6 @@ function randomMap(){
     shuffle(maps);
     shuffle(maps2);
 
-    document.getElementById('result').innerHTML =    maps3.slice(0,2).toString();
+    document.getElementById('result').innerHTML =    maps.slice(0,2).toString();
     document.getElementById('result2').innerHTML =    maps2.slice(0,2).toString();
 };
