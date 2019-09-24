@@ -1,11 +1,21 @@
-<center>
-<h1>Random map picker</h1>
+<p id="maps">Core maps:</p>
+<form name="coremaps">
+<p><input id="cmb1" checked="checked" name="maps" type="checkbox" value="Dust2" /> <label for="cmb1">Dust2</label></p>
+<p><input id="cmb2" checked="checked" name="maps" type="checkbox" value="Mirage" /> <label for="cmb2">Mirage</label></p>
+<p><input id="cmb3" checked="checked" name="maps" type="checkbox" value="Nuke" /> <label for="cmb3">Nuke</label></p>
+<p><input id="cmb4" checked="checked" name="maps" type="checkbox" value="Inferno" /> <label for="cmb4">Inferno</label></p>
+</form>
+
+<p id="maps">Other pool maps:</p>
+<p><input id="opm1" checked="checked" name="Cache" type="checkbox" value="ON" /> <label for="opm1">Cache</label></p>
+<p><input id="opm2" checked="checked" name="Overpass" type="checkbox" value="ON" /> <label for="opm2">Overpass</label></p>
+<p><input id="opm3" checked="checked" name="Vertigo" type="checkbox" value="ON" /> <label for="opm3">Vertigo</label></p>
+<p><input id="opm4" checked="checked" name="Train" type="checkbox" value="ON" /> <label for="opm4">Train</label></p>
+
+<form>
+<p>Number of core maps: <input max="4" min="0" name="numpick" type="number" value=2 /></p>
+</form>
+
 <input type="button" value="Click for a random map" onClick="randomMap()">
-<p id="maps">Maps from core (Dust2, Inferno, Nuke, Mirage) are:</p>
 <p id="result"></p>
-
-<p id="maps2">Maps from other pool (Cache, Overpass, Train, Vertigo) maps are:</p>
 <p id="result2"></p>
-
-</center>
-<script src="js/mappick.js"></script>
