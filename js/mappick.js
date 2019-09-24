@@ -33,9 +33,9 @@ function shuffle(a) {
 
 function randomMap(){
   
-    shuffle(maps3);
-    //shuffle(maps2);
+    shuffle(maps);
+    shuffle(maps2);
 
-    document.getElementById('result').innerHTML =    maps3.slice(0,4).toString();
-      //document.getElementById('result2').innerHTML =    maps2.slice(0,2).toString();
+    document.getElementById('result').innerHTML =    maps3.slice(0,2).toString();
+    document.getElementById('result2').innerHTML =    maps2.slice(0,2).toString();
 };
