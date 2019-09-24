@@ -1,29 +1,40 @@
-<title>Map randomizer</title>
+<html>
+<head>
+  <title>Map randomizer</title>
+  <style>
+    h1 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
+    h3 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+    p { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+    blockquote { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+    pre { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }  
+  </style>
+</head>
 
-<p>Core maps:</p>
-<form name="coremaps">
-<p><input id="cmb1" checked="checked" name="maps" type="checkbox" value="Dust2" /> <label for="cmb1">Dust2</label></p>
-<p><input id="cmb2" checked="checked" name="maps" type="checkbox" value="Mirage" /> <label for="cmb2">Mirage</label></p>
-<p><input id="cmb3" checked="checked" name="maps" type="checkbox" value="Nuke" /> <label for="cmb3">Nuke</label></p>
-<p><input id="cmb4" checked="checked" name="maps" type="checkbox" value="Inferno" /> <label for="cmb4">Inferno</label></p>
-</form>
+  <p>Core maps:</p>
+  <form name="coremaps">
+    <p><input id="cmb1" checked="checked" name="maps" type="checkbox" value="Dust2" /> <label for="cmb1">Dust2</label></p>
+    <p><input id="cmb2" checked="checked" name="maps" type="checkbox" value="Mirage" /> <label for="cmb2">Mirage</label></p>
+    <p><input id="cmb3" checked="checked" name="maps" type="checkbox" value="Nuke" /> <label for="cmb3">Nuke</label></p>
+    <p><input id="cmb4" checked="checked" name="maps" type="checkbox" value="Inferno" /> <label for="cmb4">Inferno</label></p>
+  </form>
 
-<p>Other pool maps:</p>
-<form name="othermaps">
-<p><input id="opm1" checked="checked" name="others" type="checkbox" value="Cache" /> <label for="opm1">Cache</label></p>
-<p><input id="opm2" checked="checked" name="others" type="checkbox" value="Overpass" /> <label for="opm2">Overpass</label></p>
-<p><input id="opm3" checked="checked" name="others" type="checkbox" value="Vertigo" /> <label for="opm3">Vertigo</label></p>
-<p><input id="opm4" checked="checked" name="others" type="checkbox" value="Train" /> <label for="opm4">Train</label></p>
-</form>
+  <p>Other pool maps:</p>
+  <form name="othermaps">
+    <p><input id="opm1" checked="checked" name="others" type="checkbox" value="Cache" /> <label for="opm1">Cache</label></p>
+    <p><input id="opm2" checked="checked" name="others" type="checkbox" value="Overpass" /> <label for="opm2">Overpass</label></p>
+    <p><input id="opm3" checked="checked" name="others" type="checkbox" value="Vertigo" /> <label for="opm3">Vertigo</label></p>
+    <p><input id="opm4" checked="checked" name="others" type="checkbox" value="Train" /> <label for="opm4">Train</label></p>
+  </form>
 
-<form>
-<p>Number of core maps: <input max="4" min="0" id="numpick" name="numpick" type="number" value=2 /></p>
-</form>
+  <form>
+    <p>Number of core maps: <input max="4" min="0" id="numpick" name="numpick" type="number" value=2 /></p>
+  </form>
 
-<input type="button" value="Click for a random map" onClick="randomMap()">
-<script src="js/mappick.js"></script>
-<p id="result"></p>
-<p id="result2"></p>
-<p id="result3"></p>
+  <input type="button" value="Click for a random map" onClick="randomMap()">
+  <script src="js/mappick.js"></script>
+  <p id="result"></p>
+  <p id="result2"></p>
+  <p id="result3"></p>
 
 
+</html>
