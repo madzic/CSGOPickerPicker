@@ -1,18 +1,4 @@
-var maps = [
-    'Dust2',
-    'Inferno',
-    'Nuke',
-    'Mirage'
-];
-
-var maps2 = [
-    'Cache',
-    'Overpass',
-    'Train',
-    'Vertigo'
-];
-
-var maps3 = [
+/* var maps3 = [
     'Cache',
     'Overpass',
     'Train',
@@ -21,7 +7,7 @@ var maps3 = [
     'Inferno',
     'Nuke',
     'Mirage'
-];
+]; */
 
 function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
@@ -32,10 +18,26 @@ function shuffle(a) {
 };
 
 function randomMap(){
-  
-    shuffle(maps);
-    shuffle(maps2);
-
-    document.getElementById('result').innerHTML =    maps.slice(0,2).toString();
-    document.getElementById('result2').innerHTML =    maps2.slice(0,2).toString();
+ 
+  var values = [];
+  var cbs = document.forms['coremaps'].elements['maps'];
+  for(var i=0,cbLen=cbs.length;i<cbLen;i++){
+    if(cbs[i].checked){
+      values.push(cbs[i].value);
+    } 
+  }
+  maps = values.join(', ')
+  shuffle(values);
+//  alert('You selected: ' + shuffle(maps3));
+  var n = document.getElementById('numpick');
+  alert(n.value)
+  document.getElementById('result').innerHTML = 23 //values//.slice(0,n).toString();
 };
+
+/* document.getElementById('cmb1').onclick = function() {
+    if ( this.checked ) {
+        document.getElementById('result').innerHTML =  this.value;
+    } else {
+        document.getElementById('result').innerHTML =  ''
+    }
+}; */
